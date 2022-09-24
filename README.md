@@ -1,2 +1,3 @@
-# manguebit
+# ZaqBit
+
 My blog.
