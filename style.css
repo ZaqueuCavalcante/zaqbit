@@ -1,80 +1,11 @@
 * {
-    /*General config*/
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
 body {
-    /*Gives movement to div*/
     display: flex;
     justify-content: center;
-
     padding: 20px;
-}
-
-.picole {
-    /*para podermos usar o 'position: absolute
-    na nossa div palito'*/
-    position: relative;
-
-    width: 150px;
-    height: 240px;
-    border: 3px solid black;
-
-    /*aredondamento do topo do picole*/
-    /* divido o width por 2 = 75px*/
-    border-top-right-radius: 75px;
-    border-top-left-radius: 75px;
-
-    /*as cores vao si repetir ate completa 100%*/
-    background: repeating-linear-gradient(
-            /*o valor de 'deg' é dado em graus*/
-            315deg,
-            /*divisao das cores inicio e fim*/
-            rgb(255, 42, 173) 0%, rgb(255, 42, 173) 10%,
-            rgb(250, 15, 15) 10%, rgb(250, 15, 15) 20%,
-            rgb(255, 255, 25) 20%, rgb(255, 255, 25) 30%,
-            rgb(46, 243, 46) 30%, rgb(46, 243, 46) 40%,
-            rgb(80, 230, 250) 40%, rgb(80, 230, 250) 50%);
-
-    /*o patrao é 100% 100%
-    quando voce altera pode esticar ou encolher o fundo */
-    background-size: 200% 200%;
-
-    /*configurando minha animação*/
-    animation: picole-animado 3s linear infinite forwards;
-}
-
-/* '@keyframes' cria uma animaçao| inicio e fim */
-@keyframes picole-animado {
-    from {
-        background-position: 0% 0%;
-    }
-
-    to {
-        background-position: 100% 100%;
-    }
-}
-
-
-.palito {
-    /* sua posiçao vai levar em consideraçao
-    o corpo da div picole*/
-    position: absolute;
-    bottom: -80px;
-
-    /*centralizando o palito com left e margin*/
-    left: 50%;
-    margin-left: -23px;
-
-    width: 40px;
-    height: 80px;
-    border: 3px solid black;
-
-    /*agora vamos arredondar o palito do picole*/
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-
-    background: #f1b64a;
 }
