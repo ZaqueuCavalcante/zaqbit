@@ -6,23 +6,59 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>ZaqBit</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
 
   <body>
-    <h1>Zaq Bit Blog</h1>
+    <header id="header" class="shadow bg-light">
+      <nav class="container navbar">
+        <a href="/" class="nav-brand text-dark">ZaqBit</a>
 
-    <h2>Post title lalala</h2>
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <a href="/posts" class="nav-link">Posts</a>
+            <a href="/tags" class="nav-link">Tags</a>
+            <a href="/links" class="nav-link">Links</a>
+          </ul>
+        </div>
 
-    <p>Post body and description tetete</p>
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <a
+              href="https://github.com/ZaqueuCavalcante"
+              class="nav-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/ZaqueuCavalcan2"
+              class="nav-link"
+              target="_blank"
+            >
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <script
-      src="https://utteranc.es/client.js"
-      repo="https://github.com/ZaqueuCavalcante/zaqbit"
-      issue-term="pathname"
-      label="blog-comments"
-      theme="github-light"
-      crossorigin="anonymous"
-      async
-    ></script>
+    <div style="text-align: center">
+      <iframe
+        width="800"
+        height="700"
+        frameborder="0"
+        src="https://observablehq.com/embed/@d3/orthographic-to-equirectangular?cells=canvas"
+      ></iframe>
+    </div>
   </body>
 </html>
