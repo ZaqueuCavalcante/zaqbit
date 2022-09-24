@@ -1,11 +1,12 @@
 * {
+    /*General config*/
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
 body {
-    /*da a posibilidade de movimenta nossa div*/
+    /*Gives movement to div*/
     display: flex;
     justify-content: center;
 
