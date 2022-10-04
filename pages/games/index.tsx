@@ -9,7 +9,7 @@ const Games: NextPage = () => {
         <meta name="description" content="ZaqBit" />
         <link rel="icon" href="../../public/favicon.ico" />
       </Head>
-      <h1>Games here</h1>
+      <h1>Games here lalala</h1>
     </>
   );
 };
