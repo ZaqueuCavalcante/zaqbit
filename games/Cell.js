@@ -7,10 +7,10 @@ class Cell {
 
   draw() {
     stroke(10);
-    fill(color(100, 100, 100));
+    fill(this.color);
 
     const size = 50;
 
-    rect(this.column * size, this.row * size, 50, 50);
+    rect(this.column * size, this.row * size, size, size);
   }
 }

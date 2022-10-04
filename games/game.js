@@ -4,12 +4,13 @@ function setup() {
   var y = 50;
   cnv.position(x, y);
 
-  cell = new Cell(2, 2, 0);
+  board = new Board(12, 20);
+
   grid = new Grid(12, 20);
 }
 
 function draw() {
-  background(230);
-  cell.draw();
+  background(255);
+  board.draw();
   grid.draw();
 }
